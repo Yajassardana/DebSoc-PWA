@@ -29,14 +29,12 @@ function FooterEcommerce() {
             <Col md="9" sm="8">
               <p style={{ color: "white", fontSize: "0.95rem" }}>
                 <strong>
-                  If you liked what you saw, subscribe for more! We deliver out
-                  new Editions every quarter, from interviews to creative
-                  content, there is something in store for everyone!
+                  Thanks for visiting our website!
                 </strong>
               </p>
             </Col>
             <Col md="3" sm="4">
-              <Button
+              {/* <Button
                 block
                 className="btn-neutral"
                 color="default"
@@ -45,7 +43,7 @@ function FooterEcommerce() {
                 onClick={() => setLoginModal(true)}
               >
                 Join Newsletter
-              </Button>
+  </Button> */}
               <Modal
                 isOpen={loginModal}
                 toggle={() => setLoginModal(false)}
@@ -151,11 +149,8 @@ function FooterEcommerce() {
                   }}
                 >
                   <strong>
-                    We extend a warm welcome to all of you to the new DTU Times
-                    website, explore the societies of the college, read blog
-                    articles by our editors, or just get up to date with what’s
-                    happening, you are sure to find something catered to your
-                    taste!
+                  The Debating Society of NSUT is a promoter of discussion and deliberation, and focuses on providing people a platform for shedding their inhibitions.
+                    
                   </strong>
                 </p>
               </div>
@@ -166,10 +161,10 @@ function FooterEcommerce() {
                   className="btn-just-icon mr-1"
                   color="youtube"
                   id="top1"
-                  href="mailto:dtutimes@dtu.ac.in"
+                  href="mailto:debsoc.nsut@gmail.com"
                 >
                   <UncontrolledTooltip placement="top" target="top1" delay={0}>
-                    Email us at dtutimes@dtu.ac.in
+                    Email us at debsoc.nsut@gmail.com
                   </UncontrolledTooltip>
                   <i className="nc-icon nc-email-85" />
                 </Button>
@@ -177,10 +172,10 @@ function FooterEcommerce() {
                   className="btn-just-icon mr-1"
                   color="facebook"
                   id="top2"
-                  href="https://www.facebook.com/dtutimes"
+                  href="https://www.facebook.com/DebSocNSUT"
                 >
                   <UncontrolledTooltip placement="top" target="top2" delay={0}>
-                    25K Likes
+                    3.5K Likes
                   </UncontrolledTooltip>
                   <i className="fa fa-facebook" />
                 </Button>
@@ -188,10 +183,10 @@ function FooterEcommerce() {
                   className="btn-just-icon mr-1"
                   color="twitter"
                   id="top3"
-                  href="https://www.instagram.com/dtu_times/"
+                  href="https://www.instagram.com/debsocnsut/"
                 >
                   <UncontrolledTooltip placement="top" target="top3" delay={0}>
-                    6.1K Followers
+                    900+ Followers
                   </UncontrolledTooltip>
                   <i className="fa fa-instagram" />
                 </Button>
@@ -199,7 +194,7 @@ function FooterEcommerce() {
                   className="btn-just-icon mr-1"
                   color="linkedin"
                   id="top4"
-                  href="https://www.linkedin.com/company/dtutimes/"
+                  href="https://www.linkedin.com/company/debating-society-of-nsit/about/"
                 >
                   <UncontrolledTooltip placement="top" target="top4" delay={0}>
                     Connect with us on LinkedIn
@@ -210,8 +205,8 @@ function FooterEcommerce() {
               {/* <hr /> */}
               <div className="copyright" style={{ color: "#494850" }}>
                 <strong>
-                  © {new Date().getFullYear()}, made with{" "}
-                  <i className="fa fa-heart heart" /> by Times Developers
+                  © {new Date().getFullYear()}, made {" "}
+                  <i className="fa fa-heart heart" /> by the Tech & Design Department
                 </strong>
               </div>
             </Col>

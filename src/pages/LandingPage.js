@@ -2,10 +2,10 @@ import React from 'react'
 
 import Header from "components/PageHeaders/LandingHeader";
 import LoaderComponent from "components/LoaderComponent";
-import EditionsSection from "sections/LandingSections/EditionsSection";
-import FeaturedPosts from 'sections/LandingSections/FeaturedPosts';
+// import EditionsSection from "sections/LandingSections/EditionsSection";
+// import FeaturedPosts from 'sections/LandingSections/FeaturedPosts';
 import {Helmet} from 'react-helmet';
-const title = "DTU Times"
+const title = "DEBSOC NSUT"
 
 const Sections = () => {
     return(
@@ -15,8 +15,9 @@ const Sections = () => {
         </Helmet>
         <Header />
         <div>
-        <EditionsSection />
+        {/* <EditionsSection />
         <FeaturedPosts />
+        
         {/* window.setTimeout(() => {
             <LandingModal isOpen={true}/>
         }, 5000); */}

@@ -63,7 +63,7 @@ function ColorNavbar() {
             {/* <a href="#pablo"> */}
             <img alt="..." id="img" src={require("assets/img/icons/W.png")} style={{height:"60px", paddingRight:"1rem"}}/>
             {/* </a> */}
-              DTU TIMES
+              DEBSOC NSUT
             </NavbarBrand>
             {/* <UncontrolledTooltip placement="bottom" target="navbar-brand">
               The Official Newsletter of DTU

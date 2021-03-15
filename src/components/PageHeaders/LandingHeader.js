@@ -9,10 +9,10 @@ const LandingHeader = () => {
       <div
         className="page-header page-header-large"
         ref={pageHeader}
-        style={{
-          backgroundImage:
-            "url(" + require("assets/img/header/image-1.jpg") + ")"
-        }}
+        // style={{
+        //   backgroundImage:
+        //     "url(" + require("assets/img/header/Collage.png") + ")"
+        // }}
       >
         <div className="filter " />
         <div className="content-center">
@@ -23,8 +23,7 @@ const LandingHeader = () => {
               isVisible={true}
             >
               <h1>
-                <strong>Hello,</strong><br />
-                <strong>We are DTU Times</strong>
+                <strong>DEBSOC NSUT</strong>
               </h1>
             </Animated>
 
@@ -34,7 +33,7 @@ const LandingHeader = () => {
               animationInDuration={1000}
               isVisible={true}
             >
-              <h3><strong>Let us tell you more about what we do.</strong></h3>
+              <h3><strong>#VeniVidiVici</strong></h3>
             </Animated>
           </Container>
         </div>
