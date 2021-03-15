@@ -7,7 +7,7 @@ import LoaderComponent from "components/LoaderComponent";
 import IconSections from "sections/AboutSections/IconSections";
 import EditiorsMessage from "sections/AboutSections/EditorsMessage";
 
-const title = "DTU Times | About Us";
+const title = "DEBSOC NSUT | About Us";
 const Sections = () => (
   <>
     <Helmet>
