@@ -9,10 +9,10 @@ const LandingHeader = () => {
       <div
         className="page-header page-header-large"
         ref={pageHeader}
-        // style={{
-        //   backgroundImage:
-        //     "url(" + require("assets/img/header/Collage.png") + ")"
-        // }}
+        style={{
+          backgroundImage:
+            "url(" + require("assets/img/header/Collage.png") + ")"
+        }}
       >
         <div className="filter " />
         <div className="content-center">
