@@ -39,10 +39,8 @@ function AboutUsHeader() {
         <div className="content-center">
           <Container>
             <h1>
-              Hello, <br />
-              We are DTU Times
+              DEBSOC NSUT welcomes you
             </h1>
-            <h3>Let us tell you more about what we do.</h3>
           </Container>
         </div>
       </div>
