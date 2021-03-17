@@ -24,7 +24,7 @@ const BlogCard = ({ posts }) => {
               <Link to={`/blog/${post.slug}`} onClick={()=> {
                   window.scrollTo(0,0);
                 }}>
-                <img alt="..." className="img img-raised" src={post.imgUrl} />
+                {/* <img alt="..." className="img img-raised" src={post.imgUrl} /> */}
               </Link>
             </div>
             <CardBody>

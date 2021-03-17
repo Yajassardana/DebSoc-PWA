@@ -95,11 +95,11 @@ function ColorNavbar() {
                   editions
                 </Link>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <Link className="navlink nav-link" to="/blog" style={{fontSize:"14px"}}>
-                  blog
+                  events
                 </Link>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <Link className="navlink nav-link" to="/gallery" style={{fontSize:"14px"}}>
                   gallery
