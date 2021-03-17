@@ -88,17 +88,9 @@ closeLightbox = () => {
                   animationIn="fadeIn"
                   animationInDelay={500}
                   isVisible={true}
-                > <a
-                  href={this.state.mob?this.state.data[0].link:null}>
-                  <img
-                    alt="..."
-                    className="grid__img layer"
-                    src={this.state.data[0].imgUrl}
-                    style={{ height: "128px", width: "100px",cursor:'pointer' }}
-                    onClick={this.state.mob?null:this.openLightbox}
-                  /></a>
+                >
+                  {" "}
                 </Animated>
-                
               </Col>
               {/* <Col>
                 <Animated
@@ -119,15 +111,23 @@ closeLightbox = () => {
                 </Animated>
               </Col> */}
             </Row>
-            {this.state.viewerIsOpen?(
-            <Modal
-            isOpen={this.state.viewerIsOpen}
-            toggle={this.closeLightbox}
-            className="yumpu_ed"
-            style={{width:'820px',height:'566px'}}
-            >
-              <iframe height="566px" width="700px" src={this.state.data[0].ajax} frameBorder={0} allowFullScreen="true" allowTransparency="true" />
-            </Modal>):null}
+            {this.state.viewerIsOpen ? (
+              <Modal
+                isOpen={this.state.viewerIsOpen}
+                toggle={this.closeLightbox}
+                className="yumpu_ed"
+                style={{ width: "820px", height: "566px" }}
+              >
+                <iframe
+                  height="566px"
+                  width="700px"
+                  src={this.state.data[0].ajax}
+                  frameBorder={0}
+                  allowFullScreen="true"
+                  allowTransparency="true"
+                />
+              </Modal>
+            ) : null}
             {/* {this.state.viewerIsOpen2?(
             <Modal
             isOpen={this.state.viewerIsOpen2}
@@ -142,7 +142,9 @@ closeLightbox = () => {
               animationInDelay={1000}
               isVisible={true}
             >
-              <h1 className="text-left"><strong>Editions</strong></h1>
+              <h1 className="text-left">
+                <strong>Departments</strong>
+              </h1>
             </Animated>
             <Animated
               animationIn="fadeInUp"
@@ -150,7 +152,7 @@ closeLightbox = () => {
               isVisible={true}
             >
               <h3 className="text-left" style={{ marginTop: 0 }}>
-                <strong>Come, take a trip down the memory lane of DTU.</strong>
+                <strong>Discover the Departments of Debsoc.</strong>
               </h3>
             </Animated>
             <div style={{ position: "relative" }}>
