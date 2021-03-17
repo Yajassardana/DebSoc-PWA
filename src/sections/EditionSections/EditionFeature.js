@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row } from "reactstrap";
 import Carousel from "nuka-carousel";
 import { Loader } from "components/LoaderComponent";
 import api from "api";
@@ -40,35 +40,35 @@ class SectionHeader extends React.Component {
   render() {
     const { editions } = this.state;
 
+    const { editors } = [
+      {
+        title: "Model United Nations",
+        img: "../../assets/img/societies/vanta.jpg",
+      },
+      {
+        title: "Parliamentary Debate",
+        img: "../../assets/img/societies/2434.jpg",
+      },
+      { title: "Tech", img: "../../assets/img/societies/techdepart.jpg" },
+      { title: "General", img: "../../assets/img/societies/gener.jpg" },
+      { title: "Literary", img: "../../assets/img/societies/literary.jpg" },
+    ];
+
     let columns = [];
     let carousels = [];
 
-    for (let index = 0; index < editions.length; index++) {
-      if (index < 9)
-        columns.push(
-          <Col md="4" className="mb-5" key={index}>
-            <EditionCard
-              title={editions[index].name}
-              des="Aug-19-Oct-19"
-              img={editions[index].imgUrl}
-              ajax = {editions[index].ajax}
-              link = {editions[index].link}
-              height = "420px"
-            />
-          </Col>
-        );
-      else
+    for (let index = 0; index <=5; index++) {
         carousels.push(
-          <div key={editions[index].id}>
-          <EditionCard
-            id = {editions[index].id}
-            title={editions[index].name}
-            img={editions[index].imgUrl}
-            ajax = {editions[index].ajax}
-            height={'420px'}
-            width = {'90%'}
-            link = {editions[index].link}
-          />
+          <div>
+            <EditionCard
+              id={editions[index].id}
+              title={editors[index].title}
+              img={editors[index].img}
+              ajax={editions[index].ajax}
+              height={"420px"}
+              width={"90%"}
+              link={editions[index].link}
+            />
           </div>
         );
     }
@@ -88,11 +88,9 @@ if(this.state.loaded===true) {
             {/* Main_website/src/assets/img/campus/2019-08-09 05.08.52 4__01.jpg */}
             <div className="" style={{paddingBottom:"3rem"}}>
               <Container>
-                <h2 style={{color:"white"}}><strong>Whatever happens in DTU, stays in DTU Times.</strong></h2>
+                <h2 style={{color:"white"}}><strong>Our Departments</strong></h2>
                 <h5 style={{ marginTop: "1rem", color:"white" }}>
-                  <strong>Visit the stories of yore preserved by us with an integration
-                  of art, fiction, imagination and satire as we rewind the clock
-                  of DTU to whichever era you wish to witness today.</strong>
+                  <strong>Enim quis officia et anim pariatur aute labore minim nulla in. Tempor labore adipisicing eiusmod tempor. Qui amet ad fugiat in. Sunt reprehenderit magna exercitation qui non voluptate qui ipsum.</strong>
                 </h5>
               </Container>
             </div>
