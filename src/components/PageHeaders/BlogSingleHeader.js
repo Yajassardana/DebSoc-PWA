@@ -68,7 +68,7 @@ const BlogSingleHeader = ({ title, biliner, timestamp }) => {
                 isVisible={true}
               >
                 <div style={{paddingTop:"2rem"}}>
-                <span><strong>Published on {ts.toDateString()}</strong></span>
+               {/* <span><strong>Published on {ts.toDateString()}</strong></span> */}
                 </div>
               </Animated>
             </Container>

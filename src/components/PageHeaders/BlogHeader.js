@@ -30,7 +30,7 @@ const BlogHeader = () => {
               isVisible={true}
             >
               <h1>
-                <strong>BLOG</strong>
+                <strong>EVENTS</strong>
               </h1>
             </Animated>
 
@@ -42,9 +42,7 @@ const BlogHeader = () => {
             >
               <h5 className="herosaver">
                 <strong>
-                  Dive headlong into a world of illuminating interviews, <br />
-                  enlightening editorials and potent prose written by some of
-                  the brightest minds of DTU.
+                  DebSoc, NSUT is proud to inform you that we host the biggest conferences of the DU circuit
                 </strong>
               </h5>
             </Animated>
@@ -55,7 +53,8 @@ const BlogHeader = () => {
   );
 };
 
-const BackgroundBlob = ({ style, props }) => (
+  const BackgroundBlob = ({ style, props }) => (
+  
   <Blob
     size="75vh"
     style={{
@@ -108,21 +107,21 @@ const BackgroundBlobSmall = ({ style, props }) => (
     {...props}
   />
 );
-// const BackgroundBlobBig = ({ style, props }) => (
-//   <Blob
-//     size="165vh"
-//     style={{
-//       position: "absolute",
-//       bottom: "10%",
-//       right: "35%",
-//       zIndex: 0,
-//       backgroundColor: "#E85D75",
-//       color: "white",
-//       opacity: 0.25,
-//       fontSize: "50vh",
-//       ...style
-//     }}
-//     {...props}
-//   />
-// );
+ const BackgroundBlobBig = ({ style, props }) => (
+  <Blob
+    size="165vh"
+    style={{
+      position: "absolute",
+      bottom: "10%",
+      right: "35%",
+      zIndex: 0,
+      backgroundColor: "#E85D75",
+      color: "white",
+      opacity: 0.25,
+      fontSize: "50vh",
+      ...style
+    }}
+    {...props}
+  />
+  ); 
 export default BlogHeader;
